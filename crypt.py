@@ -2,6 +2,9 @@ from cryptography.fernet import Fernet
 import argparse
 import os
 
+def generate_key():
+    return Fernet.generate_key()
+	 
 def write_key(key=None):
     '''
     Generates a key and saves it into a file
