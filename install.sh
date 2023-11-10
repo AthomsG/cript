@@ -22,3 +22,6 @@ elif [[ $SHELL == *"zsh"* ]]; then
 fi
 
 echo "Installation complete! Reset terminal and run 'crypt --help' for usage information, or check out the github repository: https://github.com/AthomsG/crypt/tree/main"
+
+echo "\n Press any key to exit"
+read -n 1
