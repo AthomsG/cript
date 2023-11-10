@@ -3,27 +3,24 @@ import argparse
 import os
 
 def write_key(key=None):
-	'''
-	Genereates a key and saves it into a file
-	'''
-	if not key:
-		key = Fernet.generate_key()
-	with open('~/.usr_scripts/cryptography/key.key', 'wb') as key_file:
-		key_file.write(key)
-
-def generate_key():
-	return Fernet.generate_key()
+    '''
+    Generates a key and saves it into a file
+    '''
+    if not key:
+        key = Fernet.generate_key()
+    with open(os.path.expanduser('~/.usr_scripts/cryptography/key.key'), 'wb') as key_file:
+        key_file.write(key)
 
 def load_key():
-	'''
-	Loads the key from the current directory named 'key.key'
-	'''
-	# check if key exists
-	try:
-		return open('~/.usr_scripts/cryptography/key.key', 'rb').read()
-	except:
-		print('Please generate a key first.\nUse --command generate_key to generate a key.')
-		exit()
+    '''
+    Loads the key from the current directory named 'key.key'
+    '''
+    # check if key exists
+    try:
+        return open(os.path.expanduser('~/.usr_scripts/cryptography/key.key'), 'rb').read()
+    except:
+        print('Please generate a key first.\nUse --command generate_key to generate a key.')
+        exit()
 
 def encrypt(filename, key):
 	"""
