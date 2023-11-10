@@ -6,7 +6,7 @@ echo "Directory has been created at ~/.usr_scripts/cryptography/"
 
 # Download the code
 curl -o ~/.usr_scripts/cryptography/encrypt_file.py https://raw.githubusercontent.com/AthomsG/cript/main/crypt.py
-echo "Code has been pulled. You can find it here: "
+echo "Code has been pulled"
 
 # Add the alias to the appropriate shell configuration file
 if [[ $SHELL == *"bash"* ]]; then
@@ -23,5 +23,5 @@ fi
 
 echo "Installation complete! Reset terminal and run 'crypt --help' for usage information, or check out the github repository: https://github.com/AthomsG/crypt/tree/main"
 
-echo "\n Press any key to exit"
+echo "Press any key to exit"
 read -n 1
