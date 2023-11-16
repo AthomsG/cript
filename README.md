@@ -1,5 +1,5 @@
 # Crypt
-Crypt is a command-line tool for encrypting and decrypting files using the Fernet symmetric encryption method from the python cryptography library.
+Crypt is a command-line tool for encrypting and decrypting files using the Fernet symmetric encryption method from the python cryptography library. Install by running 'install.sh' on terminal.
 
 # Setup
 
